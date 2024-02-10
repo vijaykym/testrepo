@@ -1,5 +1,5 @@
 name: myworkflow
-on: workflow_dispatch
+on: push
 jobs:
   First_job:
     runs-on: ubuntu-latest
@@ -10,11 +10,4 @@ jobs:
           echo "VJ"
       - name: second step
         run: echo "my second step"
-name: SecondWorkflow
-on: workflow_dispatch
-jobs:
-  TestJob:
-    runs-on: windows-latest
-    steps:
-      - name: Hello 
-        run: echo "hello World"
+
