@@ -10,3 +10,8 @@ jobs:
           echo "VJ"
       - name: second step
         run: echo "my second step"
+  Second_job:
+     runs-on: ubuntu-latest
+     steps:
+      - name: second step
+        run: echo "revathi vijay"
