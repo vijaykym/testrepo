@@ -10,8 +10,11 @@ jobs:
           echo "VJ"
       - name: second step
         run: echo "my second step"
-  Second_job:
-     runs-on: ubuntu-latest
-     steps:
-      - name: second step
-        run: echo "revathi vijay"
+name: SecondWorkflow
+on: workflow_dispatch
+jobs:
+  TestJob:
+    runs-on: windows-latest
+    steps:
+      - name: Hello 
+        run: echo "hello World"
