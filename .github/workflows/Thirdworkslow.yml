@@ -1,5 +1,5 @@
 name: ThirdWorkflow
-on: push
+on: [push, workflow_dispatch]
 jobs:
   TestJob:
     runs-on: windows-latest
