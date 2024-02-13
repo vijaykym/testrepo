@@ -29,7 +29,7 @@ jobs:
     - name: Creating the Build
       run: npm run build
   Deploying:   
-    needs: Testing
+    needs: Bulding
     runs-on: ubuntu-latest
     steps:
     - name: Clone the repo
