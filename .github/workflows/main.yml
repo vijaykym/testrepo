@@ -1,9 +1,7 @@
 name: ReactJsWorkflow
 on:
-  push:
-    branches:
-         -test-2
-     
+  schedule:
+    - cron: "*/5 * * * *"
 jobs:
   Testing:
     runs-on: ubuntu-latest
