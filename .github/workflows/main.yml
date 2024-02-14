@@ -4,6 +4,10 @@ jobs:
   Testing:
     runs-on: ubuntu-latest
     steps:
+    - name: Dump GitHub context
+      env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+          run: echo "$GITHUB_CONTEXT"
     - name: Clone the repo
       uses: actions/checkout@v4
     - name: Install Node Js
